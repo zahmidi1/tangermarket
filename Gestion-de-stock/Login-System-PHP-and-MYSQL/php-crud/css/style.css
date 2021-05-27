@@ -1,0 +1,60 @@
+/** @format */
+
+body {
+          background: #16a777 !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          flex-direction: column;
+}
+.container {
+          min-height: 100vh;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+}
+
+.container form {
+          width: 500px;
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box {
+          width: 750px;
+}
+.container table {
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.link-right {
+          display: flex;
+          justify-content: flex-end;
+}
+button {
+          float: right;
+          background: #555;
+          padding: 10px 15px;
+          color: #fff;
+          border-radius: 5px;
+          margin-right: 10px;
+          border: none;
+          text-decoration: none;
+}
+a {
+          float: right;
+          background: #555;
+          padding: 10px 15px;
+          color: #fff;
+          border-radius: 5px;
+          margin-right: 10px;
+          border: none;
+          text-decoration: none;
+}
