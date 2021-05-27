@@ -21,7 +21,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 
      <head>
           <title>HOME</title>
-          <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="style1.css">
      </head>
 
      <body>
@@ -50,15 +50,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                               $i++;
                          ?>
                               <br>
-                              <div class="col-lg-4 ">
+                              <div class="col-lg-4 text-center ">
                                    <div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                                               0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                         <img src="./les images/bg4.jpg" class="img-fluid" alt="">
                                         <h5 class="font-weight-bold px-3"><?= $rows['catagorie'] ?> </h5>
-                                        <div class="d-flex">
-                                             <a href="./produit.php?produit=<?php echo $rows['catagorie']; ?>" class="font-weight-bold px-3 pb-4 A">Show More</a>
 
-                                        </div>
+                                        <a href="./produit.php?produit=<?php echo $rows['catagorie']; ?>" class="font-weight-bold  A ">Show More</a>
+
+
 
 
                                    </div>

@@ -20,13 +20,15 @@ $res = mysqli_query($conn, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 
 <body>
+
     <div class="container">
 
-        <h1 class="text-center" style="color: black;">Produit</h1>
+
+        <h1 class="text-center mt-5" style="color: black;">Produit</h1>
         <div class="row ">
             <?php if (mysqli_num_rows($res)) { ?>
 
@@ -48,8 +50,12 @@ $res = mysqli_query($conn, $sql);
                             <p class="font-weight-bold px-3">Quantité min:<?= $rows['Quantite_min']; ?></p>
                             <p class="font-weight-bold px-3">Prix:<?= $rows['prix']; ?></p>
                             <div class="d-flex">
-                                <a href="delete_produit.php?id=<?= $rows['id'] ?>&category=<?= $rows['catagorie'] ?>" class="btn btn-danger">Delete</a>
+                                <a href="delete_produit.php?id=<?= $rows['id'] ?>&category=<?= $rows['catagorie'] ?>" class="btn btn-danger text-center">Delete</a>
                                 <a href="./update_produit.php?id=<?= $rows['id'] ?>&category=<?= $rows['catagorie'] ?>" class="btn btn-success">Update</a>
+
+                                <a class="btn btn-info" href="home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                    </svg></a>
                             </div>
 
 
