@@ -29,7 +29,7 @@ $res = mysqli_query($conn, $sql);
 
 
         <h1 class="text-center mt-5" style="color: black;">Produit</h1>
-        <div class="row ">
+        <div class="row  mb-5">
             <?php if (mysqli_num_rows($res)) { ?>
 
 
@@ -40,7 +40,7 @@ $res = mysqli_query($conn, $sql);
                     $i++;
                 ?>
                     <br>
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-4  mb-5 ">
                         <div class="card " style=" box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2),
                     0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
